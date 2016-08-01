@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Roll20.net Webcam Adjustor",
+    "description": "A simple extension for Roll20.net that moves the webcam video feed to the top of the screen. This allows you to keep relatively close eye contact with your fellow players by having the video feed closer to your webcam.",
+    "version": "0.0.0.1",
+    "content_scripts": [
+        {
+        "matches": [
+          "https://app.roll20.net/*", "http://app.roll20.net/*"
+        ],
+        "js": ["jquery-1.11.3.min.js", "content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "off.png",
+        "default_title": "icon"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
+
+
+
+}
